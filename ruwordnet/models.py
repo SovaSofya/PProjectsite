@@ -25,6 +25,7 @@ derivation_table = Table(
 
 class Sense(Base):
     __tablename__ = 'sense'
+    __allow_unmapped__ = True
     metadata = Base.metadata
     id: str = Column(String(), primary_key=True, index=True)
     name: str = Column(String(), index=True)
@@ -159,6 +160,7 @@ ili_table = Table(
 
 class Synset(Base):
     __tablename__ = 'synset'
+    __allow_unmapped__ = True
     metadata = Base.metadata
     id: str = Column(String(), primary_key=True, index=True)
     title: str = Column(String())
@@ -315,6 +317,7 @@ class Synset(Base):
 
 class WNSense(Base):
     __tablename__ = 'wn_sense'
+    __allow_unmapped__ = True
     metadata = Base.metadata
     key: str = Column(String(), primary_key=True, index=True)
     name: str = Column(String(), index=True)
@@ -327,6 +330,7 @@ class WNSense(Base):
 
 class WNSynset(Base):
     __tablename__ = 'wn_synset'
+    __allow_unmapped__ = True
     metadata = Base.metadata
     id: str = Column(String(), primary_key=True, index=True)
     definition: str = Column(String())
