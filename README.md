@@ -1,7 +1,7 @@
 # python-ruwordnet
 This is a Python wrapper for the [RuWordNet](https://ruwordnet.ru/en) thesaurus.
 
-Это питонячья обёртка для тезауруса [RuWordNet](https://ruwordnet.ru/ru).
+Это обёртка на Питоне для тезауруса [RuWordNet](https://ruwordnet.ru/ru).
 
 В настоящий момент поддержана версия 2021 года (RuWordNet 2.0): 59905 синсетов 
 (смысловых групп), 154111 значений слов и словосочетаний. 
